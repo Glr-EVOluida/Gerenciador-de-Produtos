@@ -36,8 +36,8 @@ class Table extends React.Component{
   handleSubmit(e) {
     // A letra 'e' é uam abreviação para event que significa o  evento ocorrido, que nesse caso é
     // é o onSubmit  que por padão era para atualizar a pagina, porém com o uso do preventDefault
-    // faz com que isso não acontença, o mesmo server  para um checkbox ou uma link <a>
-    
+    // faz com que isso não acontença, o mesmo server  para um checkbox ou uma link <a> e ect
+
     e.preventDefault();
     const { produtos } = this.state,
     nome = this.refs.nome.value,
@@ -148,8 +148,7 @@ handleDetet(e){
         return(
 
      <div className="main">
-
-            <div className="col-md-6">
+          <div className="col-md-6">
                <table className="table table-striped ">
                     <thead className="table-head">
                         <tr>
@@ -176,14 +175,10 @@ handleDetet(e){
                     <form onSubmit={this.handleSubmit} >
                         <label>Nome</label>
                         <input ref="nome"  name="nomeUp" value={this.state.nomeUp} required onChange={this.handleInputChange} className="form-control" type="text"></input>
-
                         <label>Preço</label>
-
                         <input ref="preco" name="precoUp" value={this.state.precoUp} required onChange={this.handleInputChange}  className="form-control" type="text"></input>
-
                         <label>Quantidade</label>
                         <input ref="quantidade" name="quantidadeUp"  value={this.state.quantidadeUp} required onChange={this.handleInputChange}   className="form-control" type="number"></input>
-
                         <br></br>
                         { this.state.register  ? " ":
                         <button  onClick={()=> this.handleClear()} className="form-control btn-warning"  > CANCELAR </button> }
@@ -191,9 +186,6 @@ handleDetet(e){
                     </form>
                 </div>
         </div>
-
-
-
  </div>
         );
     }
