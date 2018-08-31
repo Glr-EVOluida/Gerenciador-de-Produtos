@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+
+
+.register-main{
+  margin-top: -20px;
+ padding: 10px;
+ border: solid 5px #bce8f1;
+ color: #31708f;
+ text-transform: uppercase;
+}
+
+
+
+.alert-info{
+  border: none;
+  border-radius: 0%;
+  background: #bce8f1;
+  
+}
+
+.table-head{
+  background:#123;
+  color: white ;
+}
+
+.btn-action{
+  margin: 0%;
+ width: 100%;
+}
+
+
+
